@@ -18,8 +18,8 @@
 #   end
 #
 #   def apply_discount
-#     @total -= (@total * @discount.to_f / 100).to_i
 #     if @discount != 0
+#     @total -= (@total * @discount.to_f / 100).to_i
 #       "After the discount, the total comes to $#{@total}."
 #     else
 #       "There is no discount to apply."
@@ -68,4 +68,4 @@ class CashRegister
      @items.delete_at(-1)
     self.total = self.total - @last_item
   end
-end 
+end
